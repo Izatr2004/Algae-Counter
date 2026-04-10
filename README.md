@@ -321,17 +321,6 @@ Use the threshold detector when:
 - Large splotches are treated as non-algae and filtered by postprocessing
 - Overlap merging is done in shared sample coordinates
 
-## Git / repo hygiene
-
-Common files to ignore in `.gitignore`:
-
-```gitignore
-__pycache__/
-*.pyc
-.venv/
-venv/
-.DS_Store
-```
 
 ## Future improvements
 
@@ -343,9 +332,6 @@ Potential next steps for this project:
 - improving debug overlays for inferred grid lines and overlap regions
 - adding batch evaluation metrics for comparing threshold vs Cellpose detectors
 
-## License
-
-Add your preferred license here.
 
 ## Acknowledgments
 
@@ -353,5 +339,5 @@ This project uses:
 
 - OpenCV for image processing
 - NumPy for array operations
-- Cellpose for learned segmentation-based detection
+- Cellpose-SAM (Pachitariu, M., Rariden, M., & Stringer, C. (2025)) for learned segmentation-based detection 
 - Modal for remote GPU execution
